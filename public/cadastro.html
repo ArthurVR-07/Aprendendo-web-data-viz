@@ -132,35 +132,55 @@
 
       finalizarAguardar();
       return false;
-    } else if(nomeVar.length <= 1){
+    } else {
+      setInterval(sumirMensagem, 5000);
+    }
+    
+    if(nomeVar.length <= 1){
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
         "(O nome é pequeno demais)";
 
       finalizarAguardar();
       return false;
-    } else if(emailVar.includes('@') && emailVar.includes('.')){
+    } else {
+      setInterval(sumirMensagem, 5000);
+    }
+    
+    if(!emailVar.includes('@') || !emailVar.includes('.')){
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
         "(Email inválido)";
 
       finalizarAguardar();
       return false;
-    } else if(senhaVar.length < 6){
+    } else {
+      setInterval(sumirMensagem, 5000);
+    }
+    
+    if(senhaVar.length < 6){
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
         "(A senha deve ter mais de 6 caracteres)";
 
       finalizarAguardar();
       return false;
-    } else if(senhaVar != confirmacaoSenhaVar){
+    } else {
+      setInterval(sumirMensagem, 5000);
+    }
+    
+    if(senhaVar != confirmacaoSenhaVar){
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
         "(As senhas não coincidem)";
 
       finalizarAguardar();
       return false;
-    } else if(cpf.length != 11){
+    } else {
+      setInterval(sumirMensagem, 5000);
+    }
+    
+      if(cpfVar.length != 11){
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
         "(Tamanho do cpf esta inválido)";

@@ -384,6 +384,10 @@ canvas {
   font-weight: 800;
 }
 
+.hello #b_cpf{
+  font-weight: 300;
+}
+
 .btn-nav {
   width: 40%;
   color: white;
